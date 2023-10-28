@@ -1,0 +1,73 @@
+header {
+    height: 80px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+header .logo-wrapper img {
+    width: 32px;
+    height: 17px;
+}
+
+header .logo-wrapper p {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-dark);
+}
+
+header .enter-wrapper {
+    display: none;
+}
+
+@media (min-width: 360px) {
+    
+    header {
+        height: 100px;
+    }
+
+    header .enter-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.3rem;
+    }
+
+    header .enter-wrapper p {
+        font-size: 18px;
+        font-weight: 400;
+        cursor: pointer;
+        color: var(--text-dark);
+    }
+
+    header .enter-wrapper p:hover {
+        text-decoration: underline;
+    }
+
+    header .enter-wrapper button {
+        font-size: 18px;
+        font-weight: 400;
+        border: none;
+        width: 153px;
+        height: 54px;
+        color: white;
+        background-color: var(--button-bg-primary);
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all .3s ease;
+    }
+
+    header .enter-wrapper button:hover {
+        background-color: #1750f9;
+    }
+}
