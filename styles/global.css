@@ -3,4 +3,9 @@
     --button-bg-secondary: #F8D57E;
     --text-light: #969696;
     --text-dark: #2D2D2D;
+    --main-section-bg: #F7F5FD;
+}
+
+html {
+    scroll-behavior: smooth;
 }

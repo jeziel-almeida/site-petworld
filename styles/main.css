@@ -1,0 +1,71 @@
+main {
+    width: 100%;
+}
+
+main .main-section  {
+    width: 100%;
+    background-color: var(--main-section-bg);
+}
+
+main .main-section .section-wrapper {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+main .main-section h1 {
+    font-size: 3.125rem;
+    line-height: 3.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 24px;
+}
+
+main .main-section p {
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 400;
+    color: var(--text-light);
+    margin-bottom: 3.5rem;
+}
+
+main .main-section button {
+    width: 203px;
+    height: 64px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--button-bg-secondary);
+    color: var(--text-dark);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+main .main-section img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+@media (min-width: 380px) {
+
+    main .main-section .section-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main .main-section .section-wrapper .text-wrapper {
+        text-align: start;
+        width: 466px;
+    }
+
+    main .main-section .section-wrapper img {
+        width: 500px;
+        height: 460px;
+    }
+
+    main .main-section h1 {
+        font-size: 5rem;
+        line-height: 5.3rem;
+    }
+}

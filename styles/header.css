@@ -30,7 +30,7 @@ header .enter-wrapper {
     display: none;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 380px) {
     
     header {
         height: 100px;
