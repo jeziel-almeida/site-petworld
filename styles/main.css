@@ -2,6 +2,8 @@ main {
     width: 100%;
 }
 
+/*? main.section */
+
 main .main-section  {
     width: 100%;
     background-color: var(--main-section-bg);
@@ -47,7 +49,25 @@ main .main-section img {
     aspect-ratio: 1/1;
 }
 
+/*? video.section */
+
+.video-section {
+    width: 100%;
+    height: 300px;
+    background-color: #F2FAF8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-section .video {
+    width: 319px;
+    height: 192px;
+}
+
 @media (min-width: 380px) {
+
+    /*? main.section */
 
     main .main-section .section-wrapper {
         display: flex;
@@ -68,4 +88,15 @@ main .main-section img {
         font-size: 5rem;
         line-height: 5.3rem;
     }
+
+    /*? video.section */
+
+    .video-section {
+        height: 600px;
+    }
+
+    .video-section .video {
+        width: 765px;
+        height: 460px;
+    }    
 }
