@@ -42,6 +42,12 @@ main .main-section button {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 3rem;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+main .main-section button:hover {
+    background-color: #fbe4a9;
 }
 
 main .main-section img {
@@ -165,6 +171,59 @@ main .main-section img {
     color: var(--text-light);
 }
 
+/*? contact-us-section */
+
+.contact-us-section {
+    width: 100%;
+    background-color: #FCFAF5;
+}
+
+.contact-us-section .section-wrapper {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.contact-us-section h1 {
+    font-size: 3.125rem;
+    line-height: 3.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 24px;
+}
+
+.contact-us-section p {
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 400;
+    color: var(--text-light);
+    margin-bottom: 3.5rem;
+}
+
+.contact-us-section button {
+    width: 203px;
+    height: 64px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--button-bg-secondary);
+    color: var(--text-dark);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.contact-us-section button:hover {
+    background-color: #fbe4a9;
+}
+
+.contact-us-section img {
+    width: 100%;
+    aspect-ratio: 1.2/1;
+}
+
 @media (min-width: 760px) {
 
     /*? main-section */
@@ -252,5 +311,27 @@ main .main-section img {
     .feedback-section .feedback-wrapper .text-wrapper {
         width: 418px;
         text-align: justify;
+    }
+
+    /*? contact-us-section */
+
+    .contact-us-section .section-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-us-section .section-wrapper .text-wrapper {
+        text-align: start;
+        width: 466px;
+    }
+
+    .contact-us-section .section-wrapper img {
+        width: 475px;
+        height: 360px;
+    }
+
+    .contact-us-section h1 {
+        font-size: 5rem;
+        line-height: 5.3rem;
     }
 }
